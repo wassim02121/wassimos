@@ -1,10 +1,129 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My First Web Page</title>
+    <title>wassim</title>
+    <style>
+      body {
+        background-color: white; /* Changed background color */
+        font-family: Arial, sans-serif;
+        color: #333;
+        text-align: center;
+      }
+
+      h1 {
+        color: #FF5733; /* Changed heading color */
+      }
+      h2 {
+        color: pink; 
+        }
+      p {
+        color: darkblue; /* Changed paragraph text color */
+      }
+
+   
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        padding: 5px;
+        color: #006400; /* Changed list item color */
+      }
+
+      a {
+        color: red; /* Changed link color */
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: green; /* Changed link hover color */
+        text-decoration: underline;
+      }
+       /* 📱 Mobile Responsive Styles */
+      @media (max-width: 600px) {
+        body {
+          background-color: #e0f7fa;
+          font-size: 16px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+    </style>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <p>im wassim and this is my first wb site.</p>
-  </body>
+     <h1>Hello! I'm HADJER</h1>
+    <p>Welcome to my first website. I love wassim!</p>
+   <button onclick="toggleBackground()">Toggle Background</button>
+
+<script>
+  let isOriginal = true;
+
+  function toggleBackground() {
+    if (isOriginal) {
+      document.body.style.backgroundColor = "#ffe4b5"; // light orange
+    } else {
+      document.body.style.backgroundColor = "white"; // original color
+    }
+    isOriginal = !isOriginal; // flip the state
+  }
+</script>
+
+    <h2>About Me</h2>
+    <p>I love hello kitty, gaming, and exploring new things on the internet.</p>
+
+    <h3>My Hobbies</h3>
+    <ul>
+      <li>cooking</li>
+      <li>Watching movies</li>
+      <li>Learning new tech</li>
+    </ul>
+
+    <h4>My Favorite Website</h4>
+    <p>Check out <a href="https://www.google.com" target="_blank">Google</a> – it's my go-to for everything!</p>
+
+    <h2>My Picture</h2>
+    <img src="Hello_Kitty.webp" alt="My Picture">
+    <h2 id="greeting">Welcome to my site!</h2>
+<button onclick="toggleText()">Click Me!</button>
+
+<script>
+  let isOriginalText = true;
+
+  function toggleText() {
+    const heading = document.getElementById("greeting");
+    if (isOriginalText) {
+      heading.innerText = "You clicked the button!";
+    } else {
+      heading.innerText = "Welcome to my site!";
+    }
+    isOriginalText = !isOriginalText;
+  }
+</script>
+
+    <button onclick="toggleSecret()">Show Secret</button>
+<p id="secret" style="display: none;">🎉 i love youuu H!</p>
+
+<script>
+  function toggleSecret() {
+    const secret = document.getElementById("secret");
+    if (secret.style.display === "none") {
+      secret.style.display = "block";
+    } else {
+      secret.style.display = "none";
+    }
+  }
+</script>
+
+    </body>
 </html>
